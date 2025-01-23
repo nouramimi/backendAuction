@@ -1,0 +1,27 @@
+2024-12-20 22:35:55.559 ERROR [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.root' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.root
+    Value: "INFO # Niveau global"
+    Origin: class path resource [application.properties] - 18:20
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.INFO # Niveau global)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
